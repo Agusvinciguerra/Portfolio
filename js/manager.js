@@ -299,7 +299,7 @@ const modalManager = new ModalManager();
 // === SLIDER FUNCTIONALITY ===
 function slideGameProjects(direction) {
     const slider = document.getElementById('gameProjectsSlider');
-    const scrollAmount = 200;
+    const scrollAmount = 400;
     
     if (direction === 'prev') {
         slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
