@@ -171,6 +171,7 @@ body {
     padding: 3rem 4rem;
     position: relative;
     overflow: hidden;
+    overflow-y: hidden;
 }
 
 .intro-text img {
