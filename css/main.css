@@ -1001,6 +1001,13 @@ body {
     text-align: center;
 }
 
+.contact p {
+    margin: 0;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
 .contact-container {
     display: flex;
     flex-direction: row;
