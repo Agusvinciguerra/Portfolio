@@ -171,7 +171,6 @@ body {
     padding: 3rem 4rem;
     position: relative;
     overflow: hidden;
-    overflow-y: hidden;
 }
 
 .intro-text img {
@@ -183,6 +182,7 @@ body {
     max-width: 300px;
     z-index: 1;
     pointer-events: none;
+    overflow-y: hidden;
 }
 
 .intro-text h2,
