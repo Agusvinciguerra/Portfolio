@@ -1,0 +1,316 @@
+{
+  "es": {
+    "nav": {
+      "about": "Sobre mí",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    },
+    "hero": {
+      "intro-title": "Llevando cada idea al siguiente nivel",
+      "intro-text": "Game dev y animadora 3D mezclando arte y tecnología para crear nuevos mundos, historias inmersivas y experiencias que te atrapen desde el primer pixel."
+    },
+    "about": {
+      "title": "Sobre mí",
+      "name": "Agustina Vinciguerra",
+      "description": "Mi nombre es Agustina Vinciguerra, soy desarrolladora de videojuegos y animadora 3D. Mi pasión es combinar la precisión técnica con la expresión artística para crear experiencias interactivas inmersivas y atrapantes. Con formación en programación, animación y medios emergentes, disfruto de explorar la intersección entre narrativa y tecnología, siempre impulsada por el deseo de aprender, colaborar y ayudar a otros a conocer lo que a mí tanto me gusta hacer.\nMi trabajo abarca desde la enseñanza de Blender para principiantes en la Universidad Tecnológica Nacional en Buenos Aires, hasta el desarrollo de videojuegos completos para clientes. El pasado año, tuve la oportunidad de trabajar en la Universidad de St. John’s, en la ciudad de Nueva York, utilizando tecnología de realidad aumentada para dispositivos móviles. Siempre estoy buscando nuevos desafíos, aprendiendo cosas nuevas y llevando mis ideas un paso más allá en cada proyecto.",
+      "skills": "Habilidades",
+      "tags": ["Unity", "Unreal Engine", "Desarrollo web", "Blender", "Maya", "Git"]
+    },
+    "specializations": {
+      "title": "Especializaciones",
+      "unity": {
+        "title": "Unity Developer",
+        "description": "Desde el 2022, trabajo profesionalmente como Programadora de Videojuegos en Unity, completando proyectos que me desafíen y colaborando con grandes equipos.",
+        "button": "Ver más"
+      },
+      "animation": {
+        "title": "Animadora 3D",
+        "description": "Actualmente estoy también especializándome en Animación 3D, con un enfoque en animación de personajes para videojuegos, principalmente en Blender y Maya.",
+        "button": "Ver más"
+      }
+    },
+    "featured_projects": {
+      "title": "Proyectos destacados",
+      "project1": {
+        "title": "Day on the Farm",
+        "description": "Day on the Farm marcó mi primer paso como líder: fundé mi propio estudio indie, gestioné directamente un contrato con un cliente real y logramos entregar el producto en tiempo y forma. Esta experiencia me dio una base sólida en liderazgo, organización y trato profesional con clientes."
+      },
+      "project2": {
+        "title": "Demoreel de Animación 3D",
+        "description": "Mi demoreel de animación 3D resultó clave para mi formación profesional. Resume ocho proyectos donde recorrí el pipeline completo de animación. Pude experimentar, aprender técnica y mejorar artísticamente, consolidando mi perfil como animadora además de programadora."
+      },
+      "project3": {
+        "title": "Acol",
+        "description": "Acol me enseñó sobre habilidades blandas: cuando mi equipo decidió no continuar, me hice cargo del desarrollo completo y lo llevé hasta el final por mi cuenta. Esa resiliencia me permitió crecer no solo en lo técnico, sino también en mi confianza para superar desafíos grandes."
+      }
+    },
+    "game_projects": {
+      "title": "Mis juegos",
+      "date": "Fecha",
+      "project1": {
+        "folder": "FEF",
+        "title": "De Flor en Flor",
+        "genre": "Todos > Juegos Casuales > De Flor en Flor",
+        "date": "Mar 2021 - Dic 2021",
+        "description": "De Flor en Flor es un juego de arcade educativo en pixel art, desarrollado originalmente en JavaScript y luego migrado a TypeScript. El juego enseña sobre la importancia de las abejas en el ecosistema a través de mecánicas simples y divertidas. Mi trabajo fue programar los sistemas principales e implementar la localización del juego a cuatro idiomas diferentes, integrando por primera vez archivos JSON para gestionar textos dinámicos. De Flor en Flor fue mi primer proyecto en equipo en la universidad, destacado por los profesores por su valor educativo y jugabilidad.",
+        "tags": ["Phaser", "JavaScript", "TypeScript", "Localización", "WebGL"]
+      },
+      "project2": {
+        "folder": "HAIN",
+        "title": "Hain",
+        "genre": "Todos > Juegos Narrativos > Hain",
+        "date": "Abr 2022 - Ago 2022",
+        "description": "Hain es una obra de teatro 360° proyectada en domo y desarrollada en Unreal Engine 4 con Blueprints. Mi principal tarea involucró crear un rig del personaje principal, sus animaciones, lip sync y la implementación en el motor para ser controlado con un mando de Xbox. Tuve la oportunidad de aprender sobre máquinas de estado, animación en Blender y control de inputs en Unreal. Aunque el proyecto aún no fue lanzado, el equipo dio por finalizada la tarea tras quedar satisfechos con los resultados.",
+        "tags": ["Unreal Engine", "Blender", "Animación 3D"]
+      },
+      "project3": {
+        "folder": "RAT",
+        "title": "Rat!",
+        "genre": "Todos > Juegos de Plataforma & Runners > Rat!",
+        "date": "Mar 2022 - Jun 2022",
+        "description": "Rat! Es un juego de puzzles en 3D voxel art para Android, desarrollado en Unity. Los jugadores deben guiar a una rata a través de laberintos y escapar del laboratorio de un científico loco. Mi rol se basó en el diseño de assets, detección de inputs táctiles, programación de mecánicas principales, diseño e implementación de UI y condiciones de juego. Fue mi primer proyecto en mobile donde pude aprender sobre porting y controles táctiles. El juego obtuvo el 3er puesto entre más de diez proyectos en mi curso de la universidad.",
+        "tags": ["Unity", "Blender", "Android"]
+      },
+      "project4": {
+        "folder": "NUM",
+        "title": "Numbots",
+        "genre": "Todos > Juegos Educativos > Numbots",
+        "date": "Sep 2022 - Ene 2023",
+        "description": "Numbots es un juego de puzzles en 2D, creado con el objetivo de enseñar el sistema de valor posicional a niños de entre 9 y 13 años. Desarrollado en Unity para la empresa Legends of Learning, fui la única programadora en el proyecto, responsable de todas las mecánicas, interacción de usuario y documentación de diseño. También me tocó coordinar al equipo artístico y mantener la comunicación con el cliente. Fue mi primer proyecto profesional en Unity y resultó un éxito: recibió una calificación de 4.1/5 con más de 2000 reseñas y sigue disponible en la plataforma.",
+        "tags": ["Unity", "Educación", "Puzzles", "WebGL"]
+      },
+      "project5": {
+        "folder": "MEMO",
+        "title": "Memo World",
+        "genre": "Todos > Juegos de Puzzle > Memo World",
+        "date": "Jul 2022 - Sep 2022",
+        "description": "Memo World es un prototipo de videojuego de puzzle para dispositivos móviles, donde adaptamos la clásica sopa de letras al formato digital. El juego fue diseñado para un público mayor, con el objetivo de estimular la memoria a través de una mecánica ya familiar y una interfaz clara e intuitiva. Fue desarrollado en Unity como parte de un proyecto universitario para la misma asignatura en la que también nació Rat!. Mis responsabilidades incluyeron programar las interacciones de la interfaz de usuario, implementar los assets y gestionar la build en formato APK. Este proyecto me ayudo a pensar en cómo diseñar las experiencias teniendo en cuenta el público objetivo, y cómo elementos como la interfaz pueden variar según las diferentes necesidades o costumbres.",
+        "tags": ["Unity", "Puzzle", "Sopa de letras", "Android"]
+      },
+      "project6": {
+        "folder": "WAD",
+        "title": "What a Dragon!",
+        "genre": "Todos > Juegos Educativos > What a Dragon!",
+        "date": "Mar 2023 - Jul 2023",
+        "description": "What a Dragon! es un videojuego educativo en 2D para niños, pensado para enseñar sobre los conceptos matemáticos de perímetro y área. Al igual que Numbots y Day on the Farm, fue desarrollado para la empresa de Legends of Learning. Mi trabajo consistió en programar el videojuego desde cero, coordinar el equipo, implementar assets, testearlo y crear la build para WebGL. Este proyecto me permitió seguir afianzando mis bases en programación y producción de videojuegos educativos para distintas edades.",
+        "tags": ["Unity", "Educación", "WebGL"]
+      },
+      "project7": {
+        "folder": "ACOL",
+        "title": "Acol",
+        "genre": "Todos > Juegos de Horror > Acol",
+        "date": "Abr 2023 - Feb 2024",
+        "description": "Acol es un juego de terror, que combina un minijuego arcade 2D dentro de un mundo realista 3D. Desarrollado en Unity como parte de una materia universitaria, fui la principal responsable de programar el apartado 3D: puzzles, integración de escenas 2D y 3D, assets, animaciones y optimización gráfica (light baking, occlusion culling, LOD). A pesar de que el equipo se redujo drásticamente, logré terminar el proyecto y presentarlo por mi cuenta, recibiendo reconocimiento por mi dedicación y resiliencia.",
+        "tags": ["Unity", "3D", "2D", "Horror", "PC"]
+      },
+      "project8": {
+        "folder": "FARM",
+        "title": "Day on the Farm",
+        "genre": "Todos > Juegos Educativos > Day on the Farm",
+        "date": "Abr 2024 - Jun 2024",
+        "description": "Day on the Farm es un juego de puzzles en pixel art que enseña las reacciones químicas en la vida cotidiana orientado a niños de 7 a 8 años. Desarrollado en Unity, fue el primer proyecto de mi estudio indie GreenTea. Para este juego, diseñé y programé las mecánicas, puzzles y UI, e integré la API del cliente, como fue requerido. Además, como fundadora del estudio, gané experiencia en gestión de proyectos, clientes, manejo de equipo y outsourcing. El proyecto representó en mí un gran orgullo, ya que crecí tanto técnicamente como en habilidades de liderazgo.",
+        "tags": ["Unity", "Educación", "Puzzles", "WebGL"]
+      },
+      "project9": {
+        "folder": "DTCTV",
+        "title": "DTCTV",
+        "genre": "Todos > Juegos de Puzzle > DTCTV",
+        "date": "Jul 2025 - Sep 2025",
+        "description": "DTCTV (Detective) es un videojuego de puzzles y misterio en 3D, desarrollado en Unity. A diferencia de otros proyectos, en este caso me sumé al equipo original en una etapa avanzada para ayudar a cerrar el juego. Mi trabajo consistió en testear y corregir errores en los tres primeros niveles (que ya estaban desarrollados pero tenían fallas que impedían el flujo de juego) y programar desde cero los tres niveles restantes. Esta experiencia me obligó a adaptar mi trabajo al código de otro programador (que seguía en el equipo, pero avocado a otras tareas) y a depender de las decisiones de los diseñadores sin involucrarme en el proceso creativo por primera vez, algo que me enseñó a ser flexible y trabajar en contextos de producción ya encaminados.",
+        "tags": ["Unity", "Puzzle", "3D", "Cartoon", "PC"]
+      }
+    },
+    "animation_projects": {
+      "title": "Mi Demoreel"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "En esta (nueva!) sección vas a encontrar artículos sobre mis experiencias, reflexiones y temas relacionados con el desarrollo de videojuegos y la animación. O quizás, simplemente, solo algo que quiero decir. Espero que los disfrutes!",
+      "readMore": "Ver más",
+      "entries": {
+        "entry1": {
+          "title": "Esa vez que me entrevistó la OIT",
+          "excerpt": "Tuve la oportunidad de ser entrevistada por la Organización Internacional del Trabajo para la campaña #Laburencers!",
+          "fecha": "Última modificación: 20 de Agosto, 2025",
+          "content": "<p>Esto, más que un blog personal, es simplemente un post sobre la entrevista que me realizó la Organización Internacional de Trabajo (OIT).</p><p>En la entrevista, me hicieron preguntas sobre mi experiencia profesional, mis roles en la industria y sobre mi estatus tributario (????)</p><p>La nota es parte de una campaña llamada #Laburencers, que busca hablar sobre las diferentes realidades laborales en jóvenes adultos.</p><h3>Y también fui panelista?</h3><p>Sumándole a ésto, el pasado 23 de abril de éste año, fui invitada a participar de un panel en el seminario sobre economía informal de la OIT donde, junto a otros jóvenes, se nos dio espacio para hablar de nuestras experiencias con el trabajo informal.</p><p>Irónicamente, había muchas cámaras en todo momento, y así y todo nunca me llegó una foto oficial de mi participación, sólo una borrosa que me apareció en el feed de LinkedIn, de una persona que asistió al evento y subió fotos de los diferentes paneles.</p><p>Debería pedir que me pasen las fotos oficiales.</p><h3>De todas formas</h3><p>Dejo acá adjunto el link de la primera entrevista para que, si quieren, puedan leerla entera y juzgarme ustedes mismos:</p><h4>https://www.ilo.org/es/resource/news/videojuegos-sin-techo-de-cristal</h4>"
+        },
+        "entry2": {
+          "title": "Esa vez que hice mi portfolio de cero",
+          "excerpt": "Primer blog sobre cómo creé mi portfolio desde cero, los desafíos que enfrenté y lo que aprendí!",
+          "fecha": "Última modificación: 23 de Agosto, 2025",
+          "content": "<p>No solo este es mi primer blog (yippee) y ya que, me gustaria empezar contando sobre el proceso de esta mismísima página web!</p><p>Mi nuevo desafío empezó cuando me di cuenta de que se estaba terminando mi tiempo en el último proyecto freelance en el que estuve trabajando (ya les voy a contar más…) y me percaté de que no actualizaba mi portfolio hace casi un año (yikes)-. Entonces, buscando nuevas ideas, atravesando mi proceso creativo, tuve la brillante idea de hacerlo yo misma.</p><p>En la universidad tuve la suerte de haber aprendido un poco de html, css y javascript, asi que dije “por qué no?”. Sumándole a esto, una mañana de sábado normal se me ocurrió la gran idea de buscar online a ver que novedades encontraba. Ya había revisado un par de cursos antes, pero nunca nada serio. Y ahí lo encontré: un curso completo de desarrollo web fullstack de más de 80 horas al gran precio de</p><h3>DOCE DÓLARES. EN ESTA ECONOMÍA? </h3><p> Automáticamente dije GANGA y lo puse en el carrito, junto con otros dos cursos más también súper interesantes de los que seguramente les esté contando más adelante.</p><p>Así fue como emprendí en este camino del repasar lo que ya sabía y aprender más sobre el desarrollo web fullstack y, de hecho, me llevé la sorpresa de que recordaba muchas de las cosas de cuando lo ví en la universidad, e incluso las cosas que no había estudiado en su momento las comprendí con facilidad.</p><p>Mi felicidad era tal que, al terminar las unidades de front-end, empecé con mi propio proyecto: mi portfolio. Primero hice el diseño estructural en figma y, una vez que me gustaron los resultados, le escribí a mi amiga Pilar (EXCELENTE diseñadora gráfica btw) y me puse manos a la obra.</p><p>Primero empecé con los títulos, subtítulos y textos en html puro, después de a poco el css y, una vez que tenía más o menos definida la estructura base, pensé en agregar traducciones. Desde que ví cómo implementar localización en la universidad trato de localizar todos mis proyectos, sobre todo porque el inglés es predominante en la industria pero no quiero dejar de usar mi propio idioma.</p><p>Para esto usé un archivo JSON y algo de JavaScript, llamando desde el html a las keys de cada texto y así pudiendo centralizar todos los textos en un solo archivo.</p><p>Después seguí poniéndolo lindo, hasta que llegué a la parte más desafiante del proyecto hasta ahora: los sliders de proyectos. Gracias a #GitHub Education y #copilot, por suerte, fue sencillo diagnosticar errores y solucionarlos.</p><p>Ahora, solo queda seguir mejorando el diseño y poner los links. Gracias por acompañarme en esta! Nos vemos en la siguiente entrada.</p><h3>SIDENOTE-</h3><p>Quizás mi próximo blog sea sobre mi perspectiva sobre la IA, porque creo que es una gran herramienta si utilizada con respeto y moral, pero no están listos para esta conversación.</p>"
+        }
+      }
+    },
+    "contact": {
+      "title": "¡Hablemos!",
+      "description": "Estoy siempre abierta a nuevas oportunidades, colaboraciones y conversaciones sobre videojuegos! No dudes en contactarme si tenés una idea interesante o simplemente querés charlar. Acá abajo te dejo links para hacerlo:",
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "whatsapp": "WP"
+    },
+    "modal": {
+      "close": "Cerrar"
+    },
+    "footer": {
+      "copyright": "© 2025 Agustina Vinciguerra. Todos los derechos reservados."
+    }
+  },
+  "en": {
+    "nav": {
+      "about": "About me",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "hero": {
+      "intro-title": "Leveling every idea up",
+      "intro-text": "Game dev and 3D animator who loves blending art and technology to create new worlds, immersive stories, and experiences that captivate you from the very first pixel on."
+    },
+    "about": {
+      "title": "About me",
+      "name": "Agustina Vinciguerra",
+      "description": "My name is Agustina Vinciguerra, I'm a game developer and 3D animator who loves mixing technical precision with artistic expression to create immersive, interactive and engaging experiences. With a background in programming, animation, and emerging media, I'm passionate about exploring the intersection of storytelling and technology, always driven by a strong interest in education and collaboration.\nMy work ranges from teaching introductory 3D animation at Universidad Tecnológica Nacional in Buenos Aires to developing video games for a variety of clients. Over the last year, I had the chance to work at St. John's University in New York City, where I researched & implemented AR technologies for mobile devices. I'm always eager to learn, experiment, and push my own boundaries with every project I take on.",
+      "skills": "Skills",
+      "tags": ["Unity", "Unreal Engine", "Web Development", "Blender", "Maya", "Git"]
+    },
+    "specializations": {
+      "title": "Specializations",
+      "unity": {
+        "title": "Unity Developer",
+        "description": "Since 2022, I have been working professionally as a Game Developer in Unity, completing challenging projects and collaborating with great teams.",
+        "button": "See more"
+      },
+      "animation": {
+        "title": "3D Animator",
+        "description": "I am also specializing in 3D Animation, focusing on character animation for video games, primarily in Blender and Maya.",
+        "button": "See more"
+      }
+    },
+    "featured_projects": {
+      "title": "Featured projects",
+      "project1": {
+        "title": "Day on the Farm",
+        "description": "Day on the Farm marked my first step as a leader: I founded my own indie studio, directly managed a contract with a real client, and successfully delivered the product on time. This experience gave me a solid foundation in leadership, organization, and professional client relations."
+      },
+      "project2": {
+        "title": "3D Animator Demoreel",
+        "description": "My 3D animation demoreel was key to my professional training. It summarizes eight projects where I went through the complete animation pipeline. I got to experiment, learn new techniques, and grow artistically, consolidating my profile as an animator in addition to being a developer."
+      },
+      "project3": {
+        "title": "Acol",
+        "description": "Acol taught me a lot about soft skills: when my team decided not to continue working on the project, I took charge of the entire development and carried it through to completion on my own. This resilience allowed me to grow not only technically but also in my confidence to overcome large challenges."
+      }
+    },
+    "game_projects": {
+      "title": "My projects: Video Games",
+      "date": "Date",
+      "project1": {
+        "folder": "FEF",
+        "title": "Flower by Flower",
+        "genre": "All games > Casual Games > Flower by Flower",
+        "date": "Mar 2021 - Dec 2021",
+        "description": "Flower by flower is an educational arcade game in pixel art, originally developed in JavaScript and later migrated to TypeScript. The game teaches about the importance of bees in the ecosystem through simple and fun mechanics. My job was to program the main systems and implement localization of the game into four different languages, integrating JSON files for the first time to manage dynamic texts. Flower by flower was my first team project at university, highlighted by professors for its educational value and playability.",
+        "tags": ["Phaser", "JavaScript", "TypeScript", "Localization", "WebGL"]
+      },
+      "project2": {
+        "folder": "HAIN",
+        "title": "Hain",
+        "genre": "All games > Story-Rich Games > Hain",
+        "date": "Apr 2022 - Aug 2022",
+        "description": "Hain is a theater play projected in a 360° dome and developed in Unreal Engine 4 using Blueprints. My main tasks involved creating a rig for the main character, its animations, lip sync, and implementation in the engine to be controlled with an Xbox controller. I had the opportunity to learn about state machines, animation in Blender, and input control in Unreal. Although the project has not yet been released, the team considered the task complete after being satisfied with the results.",
+        "tags": ["Unreal Engine", "Blender", "3D Animation"]
+      },
+      "project3": {
+        "folder": "RAT",
+        "title": "Rat!",
+        "genre": "All games > Platformer & Runner Games > Rat!",
+        "date": "Mar 2022 - Jun 2022",
+        "description": "Rat! is a 3D voxel art puzzle game for Android devices, developed in Unity. Players must guide a rat through mazes and escape from a mad scientist's lab. My role focused on asset design, touch input detection, programming core mechanics, UI design and implementation, and game conditions. It was my first mobile project, where I learned about porting and touch controls. The game placed 3rd among more than ten projects in my university course.",
+        "tags": ["Unity", "Blender", "Android"]
+      },
+      "project4": {
+        "folder": "NUM",
+        "title": "Numbots",
+        "genre": "All games > Educational Games > Numbots",
+        "date": "Sep 2022 - Jan 2023",
+        "description": "Numbots is a 2D puzzle video game designed to teach the value system to children aged 9 to 13. Developed in Unity for the company Legends of Learning, I was the sole programmer on the project, responsible for all mechanics, user interaction, and design documentation. I also coordinated the art team and maintained communication with the client. It was my first professional project in Unity and was also a success: it received a rating of 4.1/5 with over 2000 reviews and is still available on the platform.",
+        "tags": ["Unity", "Education", "Puzzles", "WebGL"]
+      },
+      "project5": {
+        "folder": "MEMO",
+        "title": "Memo World",
+        "genre": "All games > Puzzle Games > Memo World",
+        "date": "Jul 2022 - Sep 2022",
+        "description": "Memo World is a puzzle video game prototype for mobile devices, where we adapted the classic word search to the digital format. The game was designed for an older audience, aiming to stimulate memory through a familiar mechanic and a clear, intuitive interface. It was developed in Unity as part of a university project for the same subject where Rat! was born. My responsibilities included programming the user interface interactions, implementing the assets, and managing the build in APK format. This project helped me think about how to design experiences with the target audience in mind, and how elements like the interface can vary according to different needs or customs.",
+        "tags": ["Unity", "Puzzle", "Word Search", "Android"]
+      },
+      "project6": {
+        "folder": "WAD",
+        "title": "What a Dragon!",
+        "genre": "All games > Educational Games > What a Dragon!",
+        "date": "Mar 2023 - Jul 2023",
+        "description": "What a Dragon! is a video game designed to teach young children about the mathematical concepts of perimeter and area. Like Numbots and Day on the Farm, it was developed for the company Legends of Learning. My work consisted of programming the video game from scratch, coordinating the team, implementing assets, testing, and creating the build for WebGL. This project allowed me to continue strengthening my foundations in programming and producing educational video games for different ages.",
+        "tags": ["Unity", "Education", "WebGL"]
+      },
+      "project7": {
+        "folder": "ACOL",
+        "title": "Acol",
+        "genre": "All games > Horror Games > Acol",
+        "date": "Apr 2023 - Feb 2024",
+        "description": "Acol is a horror video game that combines a 2D arcade minigame within a realistic 3D world. Developed in Unity as part of a university course, I was the main programmer responsible for the 3D aspects: puzzles, integration of 2D and 3D scenes, assets, animations, and graphical optimization (light baking, occlusion culling, LOD). Despite the team being drastically reduced, I managed to complete the project and present it on my own, receiving recognition for my dedication and resilience.",
+        "tags": ["Unity", "3D", "2D", "Horror", "PC"]
+      },
+      "project8": {
+        "folder": "FARM",
+        "title": "Day on the Farm",
+        "genre": "All games > Educational Games > Day on the Farm",
+        "date": "Apr 2024 - Jun 2024",
+        "description": "Day on the Farm is a pixel art puzzle video game aimed at children aged 7 to 8 that teaches chemical reactions in everyday life. Developed in Unity, it was the first project of my indie studio GreenTea. For this game, I designed and programmed the mechanics, puzzles, and UI, and integrated the client's API as required. Additionally, as the founder of the studio, I gained experience in project management, client relations, team handling, and outsourcing. I'm very proud of this project's outcome, as it helped me grow both technically and in leadership skills.",
+        "tags": ["Unity", "Education", "Puzzles", "WebGL"]
+      },
+      "project9": {
+        "folder": "DTCTV",
+        "title": "DTCTV",
+        "genre": "All games > Puzzle Games > DTCTV",
+        "date": "Jul 2025 - Sep 2025",
+        "description": "DTCTV (Detective) is a 3D puzzle and mystery video game developed in Unity. Unlike other projects, in this case I joined the original team at an advanced stage to help wrap up the game. My work consisted of testing and fixing bugs in the first three levels (which were already developed but had errors that interfered with the game flow) and programming the remaining three levels from scratch. This experience forced me to adapt my work to another programmer's code (who was still on the team but focused on other tasks) and to depend on the designers' decisions without getting involved in the creative process for the first time, something that taught me to be flexible and work in already established production contexts.",
+        "tags": ["Unity", "Puzzles", "3D", "Cartoon", "PC"]
+      }
+    },
+    "animation_projects": {
+      "title": "My Demoreel"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Blog description and topics to be covered.",
+      "readMore": "Read more",
+      "entries": {
+        "entry1": {
+          "title": "That time I was interviewed by the ILO",
+          "excerpt": "I had the opportunity to be interviewed by the International Labour Organization for the #Laburencers campaign!",
+          "fecha": "Last modified: August 20, 2024",
+          "content": "<p>This, more than a personal blog, is simply a post about my interview with the International Labour Organization (ILO).</p><p>For said interview, I was asked about my professional experience, my roles in the industry, and my tax status (????)</p><p>The interview was part of a campaign called #Laburencers, which seeks to talk about the different labor realities in young adults.</p><h3>And I was also a panelist?</h3><p>Adding to this, I was invited to participate in a panel at the ILO's informal economy seminar where, along with other young people, we were given space to talk about our experiences with informal work.</p><p>Ironically, there were many cameras at all times, and still I never received an official photo of my participation, just a blurry one that appeared in my LinkedIn feed, from a person who attended the event and uploaded photos of the different panels.</p><p>I should ask for the official photos.</p><h3>Anyway</h3><p>Here is the link to the first interview so that, if you want, you can read it in full and judge me for yourself:</p><h4>https://www.ilo.org/es/resource/news/videojuegos-sin-techo-de-cristal</h4>"
+        },
+        "entry2": {
+          "title": "That time I built my portfolio from scratch",
+          "excerpt": "First blog about how I created my portfolio from scratch, the challenges I faced and everything I've learned!",
+          "fecha": "Last modified: August 07, 2025",
+          "content": "<p>Not only is this my first blog (yippee) but I also want to start by writing about this very own website!</p><p>My latest challenge started when I first noticed that my time on the last freelance project I was working on was coming to an end (I'll tell you more about it later…) and I realized that I hadn't updated my portfolio in almost a year (yikes)-. So, looking for new ideas, going through my creative process, I had the brilliant idea of doing it myself from scratch.</p><p>In college, I was lucky enough to have learned a bit of HTML, CSS, and JavaScript, so I said, “why not?”. On top of that, one normal Saturday morning, I had the great idea of going online to see what new things I could find. I had already checked out a couple of courses before, but never anything serious. And there I found it: a complete full-stack web development course of more than 80 hours for the great price of</p><h3>TWELVE DOLLARS. IN THIS ECONOMY? </h3><p> I automatically said BARGAIN and added it to my cart, along with two other super interesting courses that I will surely be telling you more about later.</p><p>That's how I embarked on this journey of reviewing what I already knew and learning more about full-stack web development, and, in fact, I was surprised to find that I remembered many of the things from when I last reviewed them in college, and even the things I hadn't studied at the time I understood easily.</p><p>I was so happy that, upon finishing the front-end units, I started my own project: my portfolio. First, I made the structural design in Figma, and once I liked the results, I asked my friend Pilar (GREAT graphic designer, btw) to help me with the aesthetic and got to work.</p><p>First, I started with the titles, subtitles, and texts in pure HTML, then gradually added the CSS, and once I had more or less defined the basic structure, I thought about adding translations. Since I saw how to implement localization in college, I try to localize all my projects, especially because English is predominant in the industry but I don't want to stop using my own language.</p><p>For this, I used a JSON file and some JavaScript, calling from the HTML to the keys of each text and thus being able to centralize all the texts in a single file.</p><p>Then I continued making it pretty until I reached the most challenging part of the project so far: the project sliders. Thanks to #GitHub Education and #copilot, fortunately, it was easy to diagnose errors and fix them.</p><p>Now, all that's left is to keep improving the design and add navigation. Thanks for joining me on this! See you in the next entry.</p><h3>SIDENOTE-</h3><p>Maybe my next blog will be about my perspective on AI because I think it's a great tool if used with respect and morality, but you're not ready for this conversation.</p>"
+        }
+      }
+    },
+    "contact": {
+      "title": "Let's talk!",
+      "description": "I'm always open to new opportunities, collaborations, and conversations about video games! Feel free to reach out if you have an interesting idea or just want to chat. Here are some links to get in touch:",
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "whatsapp": "WP"
+    },
+    "modal": {
+      "close": "Close"
+    },
+    "footer": {
+      "copyright": "© 2025 Agustina Vinciguerra. All rights reserved."
+    }
+  }
+}

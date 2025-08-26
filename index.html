@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/games.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class = "header">
+        <nav class = "nav">
+            <a href="#sobre-mi" data-translate="nav.about">Sobre mí</a>
+            <a href="#proyectos" data-translate="nav.projects">Proyectos</a>
+            <a href="#contacto" data-translate="nav.contact">Contacto</a>
+            <div class="language-selector">
+                <button class="lang-btn active" onclick="translator.changeLanguage('es')">ES</button>
+                <button class="lang-btn" onclick="translator.changeLanguage('en')">EN</button>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="hero">
+        <img src="/imgs/Hero.svg" alt="Hero Image">
+        <section class="hero-text">
+            <h1 data-text="Agustina Vinciguerra // Agustina Vinciguerra // Agustina Vinciguerra">
+                Agustina Vinciguerra // Agustina Vinciguerra // Agustina Vinciguerra // Agustina Vinciguerra // Agustina Vinciguerra // Agustina Vinciguerra // Agustina Vinciguerra
+            </h1>
+        </section>
+    </div>
+
+    <section class="intro-text">
+        <h2 data-translate="hero.intro-title">Llevando cada idea al siguiente nivel</h2>
+        <p data-translate="hero.intro-text">Explora mis proyectos y habilidades en el desarrollo de videojuegos.</p>
+    </section>
+
+    <main>
+        <!-- Falta sección de inicio -->
+        <div class = "sobre-mi" id="sobre-mi">
+            <section class="sm-contenedor">
+                <img src="/imgs/AboutMeTitle.png" alt="About Me">
+                <p data-translate="about.description" class ="description">Descripción breve sobre ti y tus habilidades.</p>
+                <section class="tags" data-translate="about.tags"></section>
+            </section>
+            <!-- Aca van botones de referencias -->
+        </div>
+
+
+        <div class="especializaciones">
+            <h2 data-translate="specializations.title">Especializaciones</h2>
+            <section class="specializations">
+                <section class="box">
+                    <img src="/imgs/unity.png" alt="Unity">
+                    <h3 data-translate="specializations.unity.title">Unity Developer</h3>
+                    <p data-translate="specializations.unity.description">Descripción de tus habilidades en desarrollo de videojuegos.</p>
+                </section>
+
+                <section class="box">
+                    <img src="/imgs/animation.png" alt="Anim3D">
+                    <h3 data-translate="specializations.animation.title">Animadora 3D</h3>
+                    <p data-translate="specializations.animation.description">Descripción de tus habilidades en animación 3D.</p>
+                </section>
+            </section>
+        </div>
+
+        <div class="project-highlights" id="proyectos">
+            <h2 data-translate="featured_projects.title">Proyectos destacados</h2>
+            <section>
+                <section class="project">
+                    <div class="project-img">
+                        <img src="/imgs/FARM/game1.png" alt="Proyecto 1">
+                        <video muted loop preload="metadata">
+                            <source src="vds/FARM_REEL.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-translate="featured_projects.project1.title">Proyecto 1</h3>
+                        <p data-translate="featured_projects.project1.description">Descripción breve del proyecto y su relevancia.</p>
+                    </div>
+                </section>
+                
+                <section class="project">
+                    <div class="project-img">
+                        <img src="/imgs/Maya Bony.png" alt="Proyecto 2">
+                        <video muted loop preload="metadata">
+                            <source src="vds/ANIM_REEL.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-translate="featured_projects.project2.title">Proyecto 2</h3>
+                        <p data-translate="featured_projects.project2.description">Descripción breve del proyecto y su relevancia.</p>
+                    </div>
+                </section>
+
+                <section class="project">
+                    <div class="project-img">
+                        <img src="/imgs/ACOL/game1.png" alt="Proyecto 3">
+                        <video muted loop preload="metadata">
+                            <source src="vds/ACOL_REEL.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-translate="featured_projects.project3.title">Proyecto 3</h3>
+                        <p data-translate="featured_projects.project3.description">Descripción breve del proyecto y su relevancia.</p>
+                    </div>
+                </section>
+            </section>
+        </div>
+
+        <div class="game-projects-container">
+            <h2 data-translate="game_projects.title">Mis proyectos: Videojuegos</h2>
+            <div>
+                <section class="game-projects" id="gameProjectsSlider">
+                    <!-- PROYECTOS NUEVOS AGREGAR ARRIBA -->
+                    <section class="game" onclick="openGameProject('project9')">
+                        <img src="/imgs/DTCTV/logo.png" alt="Proyecto 9">
+                        <h3 data-translate="game_projects.project9.title">Proyecto 9</h3>
+                    </section>
+
+                    <section class="game" onclick="openGameProject('project8')">
+                        <img src="/imgs/FARM/logo.png" alt="Proyecto 8">
+                        <h3 data-translate="game_projects.project8.title">Proyecto 8</h3>
+                    </section>
+
+                    <section class="game" onclick="openGameProject('project7')">
+                        <img src="/imgs/ACOL/logo.png" alt="Proyecto 7">
+                        <h3 data-translate="game_projects.project7.title">Proyecto 7</h3>
+                    </section>
+
+                    <section class="game" onclick="openGameProject('project6')">
+                        <img src="/imgs/WAD/logo.png" alt="Proyecto 6">
+                        <h3 data-translate="game_projects.project6.title">Proyecto 6</h3>
+                    </section>
+
+                    <section class="game" onclick="openGameProject('project5')">
+                        <img src="/imgs/MEMO/logo.png" alt="Proyecto 5">
+                        <h3 data-translate="game_projects.project5.title">Proyecto 5</h3>
+                    </section>
+
+                    <section class="game" onclick="openGameProject('project4')">
+                        <img src="/imgs/NUM/logo.png" alt="Proyecto 4">
+                        <h3 data-translate="game_projects.project4.title">Proyecto 4</h3>
+                    </section>
+
+                    <section class="game" onclick="openGameProject('project3')">
+                        <img src="/imgs/RAT/logo.png" alt="Proyecto 3">
+                        <h3 data-translate="game_projects.project3.title">Proyecto 3</h3>
+                    </section>
+
+                    <section class="game" onclick="openGameProject('project2')">
+                        <img src="/imgs/HAIN/logo.png" alt="Proyecto 2">
+                        <h3 data-translate="game_projects.project2.title">Proyecto 2</h3>
+                    </section>
+
+                    <section class="game" onclick="openGameProject('project1')">
+                        <img src="/imgs/FEF/logo.png" alt="Proyecto 1">
+                        <h3 data-translate="game_projects.project1.title">Proyecto 1</h3>
+                    </section>
+                </section>
+                <div class="nav-pj">
+                    <button class="slider-nav prev" onclick="slideGameProjects('prev')"></button>
+                    <button class="slider-nav next" onclick="slideGameProjects('next')"></button>
+                </div>
+            </div>
+        </div>
+
+        <div  class="animation-projects-container">
+            <h2 data-translate="animation_projects.title">Mis proyectos: Animación</h2>
+            <div class="animation-projects" id="animationProjectsSlider">
+                <video muted loop preload="metadata">
+                    <source src="vds/DEMOREEL.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="blogs">
+            <h2 data-translate="blog.title">Blog</h2>
+            <div>
+                <section class="blog-posts" id="blogPostsSlider">
+                    <section class="blog">
+                        <section class="blog-entry">
+                            <p class="fecha" data-translate="blog.entries.entry2.fecha">22 de Enero, 2024</p>
+                            <h3 data-translate="blog.entries.entry2.title"></h3>
+                            <p data-translate="blog.entries.entry2.excerpt"></p>
+                        </section>
+                        <button class="boton-blog" onclick="openBlog('blog2')">
+                            <span data-translate="blog.readMore">Ver más</span>
+                        </button>
+                    </section>
+
+                    <section class="blog">
+                        <section class="blog-entry">
+                            <p class="fecha" data-translate="blog.entries.entry1.fecha">15 de Enero, 2024</p>
+                            <h3 data-translate="blog.entries.entry1.title">Mi experiencia con Unity</h3>
+                            <p data-translate="blog.entries.entry1.excerpt"></p>
+                        </section>
+                        <button class="boton-blog" onclick="openBlog('blog1')">
+                            <span data-translate="blog.readMore">Ver más</span>
+                        </button>
+                    </section>
+                </section>
+                
+                <div class="blog-navigation">
+                    <button class="slider-nav prev" onclick="slideBlogPosts('prev')"></button>
+                    <button class="slider-nav next" onclick="slideBlogPosts('next')"></button>
+                </div>
+            </div>
+            </section>
+        </div>
+
+
+        <div class="contact" id="contacto">
+            <h2 data-translate="contact.title">¡Hablemos!</h2>
+            <p data-translate="contact.description">Descripción breve sobre cómo pueden contactarte.</p>
+            <section class="contact-container">                
+                <section class="contact-item">
+                    <a class="contact-btn" href="mailto:agustinavinciguerra@gmail.com">E-mail</a>
+                </section>
+
+                <section class="contact-item">
+                    <a class="contact-btn" href="https://www.linkedin.com/in/agustina-vinciguerra">LinkedIn</a>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <!-- <footer class = "footer-container">
+        <p class="footer-copy" data-translate="footer.copyright">&copy; 2025 Agustina Vinciguerra. Todos los derechos reservados.</p>
+    </footer> !-->
+
+    <script src="js/translations.js"></script>
+    <script src="js/manager.js"></script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+:root {
+    --game-modal-width: 35rem;  
+    --game-modal-height: 70vh;  
+    --game-modal-border-radius: 0.05rem;
+}
+
+.game-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1100;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.game-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    animation: fadeInGameModal 0.3s ease forwards;
+}
+
+.game-modal-overlay.active .game-modal-container {
+    animation: slideInGameModal 0.3s ease forwards;
+}
+
+.game-modal-container {
+    background-color: var(--light-lilac);
+    border-radius: var(--game-modal-border-radius);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.25);
+    max-width: 90%;
+    max-height: var(--game-modal-height);
+    width: var(--game-modal-width);
+    min-height: 25rem;
+    position: relative;
+    transform: scale(0.9) translateY(-1rem);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- HEADER --- */
+
+.game-modal-header {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top-left-radius: var(--game-modal-border-radius);
+    border-top-right-radius: var(--game-modal-border-radius);
+    background-color: var(--text-color);
+}
+
+.game-modal-header p {
+    margin: 1.5rem 2rem;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    color: var(--secondary-color);
+    margin-bottom: .2rem;
+}
+
+.game-modal-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 2rem;
+    color: var(--secondary-color);
+}
+
+/* --- CONTENIDO --- */
+
+.game-modal-empty p {
+    margin: 0 2rem;
+}
+
+.game-modal-empty p:first-child {
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+.game-modal-description {
+    padding: 0;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.game-modal-tags {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0.25rem;
+    display: inline-block;
+}
+
+/* --- GALERIA --- */
+
+.game-modal-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery-slider {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery-image {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+
+.gallery-image:hover {
+    cursor: pointer;
+}
+
+.gallery-preview-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    min-height: 50px;
+}
+
+.gallery-preview {
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 0.2rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    opacity: 0.7;
+    border: 2px solid var(--primary-color);
+    background: #fff;
+    transition: opacity 0.2s, border 0.2s;
+    flex-shrink: 0;
+}
+
+.gallery-prev,
+.gallery-next {
+    background: none;
+    border: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    transition: filter 0.2s, transform 0.3s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+}
+
+.gallery-prev {
+    background-image: url('../imgs/Black_BTN.svg');
+    margin-right: 0.5rem;
+}
+
+.gallery-next {
+    background-image: url('../imgs/-Black_BTN.svg');
+    margin-left: 0.5rem;
+}
+
+/* --- ABRIR IMAGENES --- */
+
+.image-popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.image-popup-container {
+    position: relative;
+    max-width: 70%;
+    max-height: 90%;
+}
+.image-popup-img {
+    max-width: 100%;
+    max-height: 80%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.5);
+    background: #fff;
+}
+.image-popup-close {
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+/* --- FOOTER --- */
+
+.game-modal-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1.5rem 1.5rem;
+    padding-top: 2rem;
+    background: linear-gradient(to top, var(--light-lilac) 90%, transparent);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.75rem;
+    z-index: 2;
+    border-bottom-left-radius: var(--game-modal-border-radius);
+    border-bottom-right-radius: var(--game-modal-border-radius);
+}
+
+.game-modal-btn {
+    padding: 0.5rem 1rem;
+    font-family: 'Space Grotesk', sans-serif;
+    border: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    min-width: 4rem;
+}
+
+.game-modal-btn-primary {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.game-modal-btn-primary:hover {
+    background-color: var(--primary-color-light);
+    transform: translateY(-1px);
+}
+
+.game-modal-btn-secondary {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+.game-modal-btn-secondary:hover {
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+}
+
+/* === ANIMACIONES === */
+
+@keyframes fadeInGameModal {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes fadeOutGameModal {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slideInGameModal {
+    from {
+        transform: scale(0.9) translateY(-1rem);
+    }
+    to {
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes slideOutGameModal {
+    from {
+        transform: scale(1) translateY(0);
+    }
+    to {
+        transform: scale(0.9) translateY(-1rem);
+    }
+}
+
+.game-modal-overlay.closing {
+    animation: fadeOutGameModal 0.3s ease forwards;
+}
+
+.game-modal-overlay.closing .game-modal-container {
+    animation: slideOutGameModal 0.3s ease forwards;
+}
+
+.game {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.game:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.game-modal-content {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding: 0 0 4rem 0;
+    min-height: 0;
+    scrollbar-width: thin;
+    scrollbar-color: var(--text-color) transparent;
+}
+
+@media (min-width: 2560px) {
+    :root {
+        --game-modal-width: 55rem;
+    }
+    .game-modal-container {
+        min-width: 48rem;
+    }
+}
