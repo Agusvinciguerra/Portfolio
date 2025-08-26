@@ -1122,14 +1122,14 @@ body {
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
     .contact {
         padding: 4rem 10rem;
     }
 
     .contact-container {
-        margin-left: 20rem;
-        margin-right: 20rem;
+        margin-left: 30rem;
+        margin-right: 30rem;
     }
     
     .contact-item {
