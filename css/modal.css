@@ -33,8 +33,8 @@
 .modal-container {
     background-color: var(--secondary-color);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-    max-width: 90vw;
-    max-height: 90vh;
+    max-width: 90%;
+    max-height: 90%;
     width: 50rem;
     position: relative;
     transform: scale(0.8) translateY(-2rem);
@@ -107,7 +107,6 @@
     background: var(--baby-blue);
 }
 
-/* Fecha del blog en el modal */
 .modal-fecha {
     font-size: 1.5rem;
     color: var(--baby-blue);
@@ -115,7 +114,6 @@
     font-weight: 600;
 }
 
-/* Texto del blog en el modal */
 .modal-text {
     font-size: 1rem;
     color: var(--text-color);
@@ -184,29 +182,24 @@
 
 @media (max-width: 768px) {
     .modal-container {
-        width: 95vw;
-        max-height: 95vh;
+        width: 95%;
+        max-height: 95%;
         margin: 1rem;
     }
-    
     .modal-header {
         padding: 1rem 1.5rem;
     }
-    
     .modal-title {
         font-size: 1.25rem;
     }
-    
     .modal-content {
         padding: 1.5rem;
         max-height: 70vh;
     }
-    
     .modal-footer {
         padding: 1rem 1.5rem;
         flex-direction: column;
     }
-    
     .modal-btn {
         width: 100%;
     }
@@ -219,35 +212,28 @@
         margin: 0.5rem;
         border-radius: 0.5rem;
     }
-    
     .modal-header {
         padding: 0.75rem 1rem;
         border-radius: 0.5rem 0.5rem 0 0;
     }
-    
     .modal-title {
         font-size: 1.125rem;
     }
-    
     .modal-close {
         font-size: 1.5rem;
         width: 2rem;
         height: 2rem;
     }
-    
     .modal-content {
         padding: 1rem;
         max-height: 75vh;
     }
-    
     .modal-text {
         font-size: 0.9rem;
     }
-    
     .modal-footer {
         padding: 0.75rem 1rem;
     }
-    
     .modal-btn {
         padding: 0.5rem 1rem;
         font-size: 0.85rem;

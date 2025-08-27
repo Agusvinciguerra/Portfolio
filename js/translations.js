@@ -47,7 +47,7 @@ class Translator {
             
             if (Array.isArray(translation)) {
                 // Para arrays como tags
-                element.innerHTML = translation.map(tag => `<span class="tag">${tag}</span>`).join('');
+                element.innerHTML = translation.map(tag => `<span class="tag">#${tag}</span>`).join('');
             } else if (typeof translation === 'string' && translation.includes('\n')) {
                 // Para texto con saltos de línea - crear párrafos
                 const paragraphs = translation.split('\n').filter(p => p.trim() !== '');

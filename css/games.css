@@ -1,7 +1,6 @@
 :root {
     --game-modal-width: 35rem;  
-    --game-modal-height: 70vh;  
-    --game-modal-border-radius: 0.05rem;
+    --game-modal-height: 70vh;
 }
 
 .game-modal-overlay {
@@ -32,7 +31,6 @@
 
 .game-modal-container {
     background-color: var(--light-lilac);
-    border-radius: var(--game-modal-border-radius);
     box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.25);
     max-width: 90%;
     max-height: var(--game-modal-height);
@@ -48,6 +46,7 @@
 /* --- HEADER --- */
 
 .game-modal-header {
+    background-color: var(--text-color);
     margin: 0;
     padding: 0;
     padding-bottom: 1rem;
@@ -57,24 +56,20 @@
     align-items: flex-start;
     border-top-left-radius: var(--game-modal-border-radius);
     border-top-right-radius: var(--game-modal-border-radius);
-    background-color: var(--text-color);
 }
 
 .game-modal-header p {
-    margin: 1.5rem 2rem;
+    color: var(--secondary-color);
+    margin: 1.5rem 2rem .2rem 2rem;
     font-size: 0.9rem;
     text-decoration: underline;
-    color: var(--secondary-color);
-    margin-bottom: .2rem;
 }
 
 .game-modal-title {
+    color: var(--secondary-color);
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-left: 2rem;
-    color: var(--secondary-color);
+    margin: 0 0 0 2rem;
 }
 
 /* --- CONTENIDO --- */
@@ -90,9 +85,7 @@
 
 .game-modal-description {
     padding: 0;
-    margin-top: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 0 2rem;
 }
 
 .game-modal-tags {
@@ -157,8 +150,8 @@
     opacity: 0.7;
     border: 2px solid var(--primary-color);
     background: #fff;
-    transition: opacity 0.2s, border 0.2s;
     flex-shrink: 0;
+    transition: opacity 0.2s, border 0.2s;
 }
 
 .gallery-prev,
@@ -196,11 +189,13 @@
     justify-content: center;
     z-index: 9999;
 }
+
 .image-popup-container {
     position: relative;
     max-width: 70%;
     max-height: 90%;
 }
+
 .image-popup-img {
     max-width: 100%;
     max-height: 80%;
@@ -208,6 +203,7 @@
     box-shadow: 0 4px 32px rgba(0,0,0,0.5);
     background: #fff;
 }
+
 .image-popup-close {
     position: absolute;
     top: -2rem;
@@ -248,16 +244,6 @@
     min-width: 4rem;
 }
 
-.game-modal-btn-primary {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-}
-
-.game-modal-btn-primary:hover {
-    background-color: var(--primary-color-light);
-    transform: translateY(-1px);
-}
-
 .game-modal-btn-secondary {
     background-color: transparent;
     color: var(--text-color);
@@ -269,7 +255,7 @@
     color: var(--secondary-color);
 }
 
-/* === ANIMACIONES === */
+/* --- ANIMACIONES --- */
 
 @keyframes fadeInGameModal {
     from {
@@ -310,6 +296,8 @@
         transform: scale(0.9) translateY(-1rem);
     }
 }
+
+/* --- CIERRE --- */
 
 .game-modal-overlay.closing {
     animation: fadeOutGameModal 0.3s ease forwards;
