@@ -40,33 +40,27 @@ class ModalManager {
                 
                 if (video) {
                     projectImg.addEventListener('mouseenter', function() {
-                        // Limpiar cualquier timeout anterior
                         clearTimeout(hoverTimeout);
                         
-                        // Esperar 500ms antes de empezar el fade y reproducir
                         hoverTimeout = setTimeout(() => {
-                            video.currentTime = 0; // Reinicia el video desde el inicio
-                            video.play(); // Reproduce el video
+                            video.currentTime = 0;
+                            video.play();
                             
-                            // Hacer fade del video (de 0 a 1) y de la imagen (de 1 a 0)
                             video.style.opacity = '1';
                             projectImg.querySelector('img').style.opacity = '0';
-                        }, 500); // 500ms de retraso
+                        }, 500);
                     });
                     
                     projectImg.addEventListener('mouseleave', function() {
-                        // Limpiar el timeout si el usuario quita el cursor antes de que termine
                         clearTimeout(hoverTimeout);
                         
-                        // Inmediatamente hacer fade out del video y fade in de la imagen
                         video.style.opacity = '0';
                         projectImg.querySelector('img').style.opacity = '1';
                         
-                        // Pausa el video después de que termine el fade
                         setTimeout(() => {
                             video.pause();
                             video.currentTime = 0;
-                        }, 300); // Esperar a que termine la transición CSS (0.3s)
+                        }, 300);
                     });
                 }
             });
@@ -76,28 +70,24 @@ class ModalManager {
             const animationVideo = document.querySelector('.animation-projects video');
             
             if (animationVideo) {
-                // Asegurar que el video se reproduzca automáticamente cuando esté visible
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
-                            // Video visible en pantalla - asegurar reproducción
                             animationVideo.play().catch(e => {
                                 console.log('Autoplay bloqueado por el navegador:', e);
                             });
                         } else {
-                            // Video fuera de pantalla - pausar para ahorrar recursos
                             animationVideo.pause();
                         }
                     });
                 }, {
-                    threshold: 0.5 // Se activa cuando el 50% del video es visible
+                    threshold: 0.5 
                 });
                 
                 observer.observe(animationVideo);
             }
         });
 
-        // Smooth scroll para navegación interna
         document.querySelectorAll('a[href^="#"]').forEach(link => {
             link.addEventListener('click', function(e) {
                 const targetId = this.getAttribute('href').slice(1);
@@ -206,7 +196,8 @@ class ModalManager {
         setTimeout(() => {
             this.currentModal.classList.remove('active');
             this.currentModal.classList.remove('closing');
-            document.body.style.overflow = 'auto';
+            document.body.style.overflowY = 'auto';
+            document.body.style.overflowX = 'hidden';
         }, 300);
     }
 
@@ -264,14 +255,12 @@ class ModalManager {
             };
             gallery.style.display = 'block';
 
-            // CARGA LA PRIMERA IMAGEN Y PREVIEW
             updateGallery(current, gameData.images);
         } else {
             gallery.innerHTML = '';
             gallery.style.display = 'none';
         }
 
-        // Detecta si el juego tiene la tag "android"
         this.isAndroidGame = false;
         if (gameData && gameData.tags) {
             this.isAndroidGame = gameData.tags.some(tag => tag.toLowerCase() === 'android');
@@ -289,14 +278,14 @@ class ModalManager {
         setTimeout(() => {
             this.currentGameModal.classList.remove('active');
             this.currentGameModal.classList.remove('closing');
-            document.body.style.overflow = 'auto';
+            document.body.style.overflowY = 'auto';
+            document.body.style.overflowX = 'hidden';
         }, 300);
     }
 }
 
 const modalManager = new ModalManager();
 
-// === SLIDER FUNCTIONALITY ===
 function slideGameProjects(direction) {
     const slider = document.getElementById('gameProjectsSlider');
     const scrollAmount = 400;
@@ -371,7 +360,6 @@ function updateGallery(mainIndex, images) {
     const prevImg = document.querySelector('.gallery-preview-prev');
     const nextImg = document.querySelector('.gallery-preview-next');
 
-    // Limpia el contenedor principal
     const slider = mainImg.parentElement;
     slider.innerHTML = '';
 
@@ -392,7 +380,6 @@ function updateGallery(mainIndex, images) {
         mainMedia.style.height = '100%';
         mainMedia.style.objectFit = 'contain';
 
-        // Evento para ampliar solo imágenes
         mainMedia.onclick = function() {
             const popup = document.getElementById('image-popup-overlay');
             const popupImg = popup.querySelector('.image-popup-img');
@@ -410,11 +397,9 @@ function updateGallery(mainIndex, images) {
     }
     slider.appendChild(mainMedia);
 
-    // Índices circulares
     const prevIndex = (mainIndex - 1 + images.length) % images.length;
     const nextIndex = (mainIndex + 1) % images.length;
 
-    // Previews
     if (prevImg) {
         if (images[prevIndex].endsWith('.mp4')) {
             prevImg.src = `imgs/videologo.png`;
