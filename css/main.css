@@ -965,6 +965,17 @@ body {
     background-image: url('../imgs/-Btn_Boton.svg'); 
 }
 
+@media (max-width: 767px) {
+    .blogs {
+        padding: 2rem 4rem;
+    }
+    .blog-entry {
+        padding: 1rem;
+        min-width: 10rem;
+        height: 25rem;
+    }
+}
+
 @media (min-width: 1440px) {
     .blogs {
         padding: 6rem 8rem;
@@ -1077,7 +1088,7 @@ body {
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
     .contact {
         padding: 4rem 10rem;
     }
