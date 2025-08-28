@@ -585,7 +585,7 @@ body {
     transition: flex 0.15s ease;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1439px) {
     .project-highlights {
         align-items: center;
         padding: 2rem 0;
