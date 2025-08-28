@@ -196,7 +196,7 @@ class ModalManager {
         setTimeout(() => {
             this.currentModal.classList.remove('active');
             this.currentModal.classList.remove('closing');
-            document.body.style.overflowY = 'hidden';
+            document.body.style.overflowY = 'auto';
             document.body.style.overflowX = 'hidden';
         }, 300);
     }
@@ -278,7 +278,7 @@ class ModalManager {
         setTimeout(() => {
             this.currentGameModal.classList.remove('active');
             this.currentGameModal.classList.remove('closing');
-            document.body.style.overflowY = 'hidden';
+            document.body.style.overflowY = 'auto';
             document.body.style.overflowX = 'hidden';
         }, 300);
     }
