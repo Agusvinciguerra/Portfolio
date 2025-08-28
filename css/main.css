@@ -965,7 +965,7 @@ body {
     background-image: url('../imgs/-Btn_Boton.svg'); 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1439px) {
     .blogs {
         padding: 2rem 4rem;
     }
